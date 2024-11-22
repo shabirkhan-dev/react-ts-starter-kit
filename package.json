@@ -12,7 +12,9 @@
 		"format": "biome format ./src",
 		"format:fix": "biome format ./src --write",
 		"preview": "vite preview",
-		"prepare": "lefthook install"
+		"prepare": "lefthook install",
+		"test": "vitest",
+		"cy:open": "cypress open"
 	},
 	"dependencies": {
 		"@tanstack/react-query": "^5.61.0",
@@ -30,10 +32,12 @@
 		"@types/react": "^18.3.12",
 		"@types/react-dom": "^18.3.1",
 		"@vitejs/plugin-react-swc": "^3.7.1",
+		"cypress": "^13.16.0",
 		"globals": "^15.12.0",
 		"lefthook": "^1.8.4",
 		"tailwindcss": "4.0.0-beta.2",
 		"typescript": "~5.6.3",
-		"vite": "^5.4.11"
+		"vite": "^5.4.11",
+		"vitest": "^2.1.5"
 	}
 }
