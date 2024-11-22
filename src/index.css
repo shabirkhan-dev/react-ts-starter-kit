@@ -38,5 +38,14 @@
 	--ease-fluid: cubic-bezier(0.3, 0, 0, 1);
 	--ease-snappy: cubic-bezier(0.2, 0, 0, 1);
 
+	/* add border color */
+	--border: oklch(0.16 0 270);
+	--input: oklch(0.16 0 270);
+	--ring: oklch(0.16 0 270);
+	--background: oklch(0.16 0 270);
+	--foreground: oklch(0.16 0 270);
+	--primary: oklch(0.16 0 270);
+	--secondary: oklch(0.16 0 270);
+
 	/* ... */
 }
