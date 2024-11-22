@@ -25,6 +25,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
+		"@cypress/react18": "^2.0.1",
 		"@tailwindcss/vite": "4.0.0-beta.2",
 		"@tanstack/router-devtools": "^1.82.2",
 		"@tanstack/router-plugin": "^1.81.9",

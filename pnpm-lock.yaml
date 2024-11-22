@@ -27,6 +27,9 @@ importers:
       '@biomejs/biome':
         specifier: 1.9.4
         version: 1.9.4
+      '@cypress/react18':
+        specifier: ^2.0.1
+        version: 2.0.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(cypress@13.16.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tailwindcss/vite':
         specifier: 4.0.0-beta.2
         version: 4.0.0-beta.2(@babel/core@7.26.0)(postcss@8.4.49)(svelte@5.2.7)(typescript@5.6.3)(vite@5.4.11(@types/node@22.9.1)(lightningcss@1.28.1))
@@ -211,6 +214,18 @@ packages:
   '@colors/colors@1.5.0':
     resolution: {integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==}
     engines: {node: '>=0.1.90'}
+
+  '@cypress/react18@2.0.1':
+    resolution: {integrity: sha512-T/bhFEvVDIu0lDOKXbEQqVEmmANKWc/pyFDyDoJw3OndRYv9QVEJSsE/VNXIaOQLDjWvQkKBOwd0lLe1hWF/Zg==}
+    peerDependencies:
+      '@types/react': ^18
+      '@types/react-dom': ^18
+      cypress: '*'
+      react: ^18
+      react-dom: ^18
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   '@cypress/request@3.0.6':
     resolution: {integrity: sha512-fi0eVdCOtKu5Ed6+E8mYxUF6ZTFJDZvHogCBelM0xVXmrDEkyM22gRArQzq1YcHPm1V47Vf/iAD+WgVdUlJCGg==}
@@ -2236,6 +2251,15 @@ snapshots:
 
   '@colors/colors@1.5.0':
     optional: true
+
+  '@cypress/react18@2.0.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(cypress@13.16.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@types/react-dom': 18.3.1
+      cypress: 13.16.0
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      '@types/react': 18.3.12
 
   '@cypress/request@3.0.6':
     dependencies:
