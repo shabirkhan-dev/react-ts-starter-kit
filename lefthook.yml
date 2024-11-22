@@ -1,0 +1,15 @@
+pre-commit:
+  commands:
+    check:
+    skip:
+        - "*.min.*"
+        - "node_modules/"
+      glob: "**/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: npx @biomejs/biome check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+
+
+    prevent-bad-commit:
+      run: test $(git diff --cached --name-only | wc -l) -gt 0
+      skip:
+        - merge
+        - rebase
